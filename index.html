@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="Css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Css/style.css" />
+  </head>
+  <body class="container d-flex flex-column align-items-center">
+    <header>
+      <h1 class="my-5">Bookmarker</h1>
+      <div class="bgo"></div>
+    </header>
+    <div
+      class="box w-100 p-3 mt-3 d-flex flex-column align-items-center justify-content-center"
+    >
+      <div class="mb-3">
+        <i id="b1" class="fa fa-bookmark fs-2"></i>
+        <h3>Bookmark your favorite sites</h3>
+        <i id="b2" class="fa fa-bookmark fs-2"></i>
+      </div>
+
+      <div class="w-100 m-2 align-content-center mb-3">
+        <i class="fa fa-book fs-5 mx-1"></i>
+        <label class="form-label" for="siteName">Site Name</label>
+        <input
+          id="siteName"
+          placeholder="Bookmark Name"
+          class="form-control"
+          type="text"
+        />
+      </div>
+
+      <div class="w-100 m-2 justify-content-center">
+        <i class="fa fa-link fs-5 mx-1"></i>
+        <label class="form-label" for="siteName">Site URL</label>
+        <input
+          id="siteUrl"
+          placeholder="Website URL"
+          class="form-control"
+          type="text"
+        />
+      </div>
+
+      <button type="submit" id="submitBTN" class="btn btn-red px-5 my-3">
+        Submit
+      </button>
+    </div>
+
+    <table class="table bg-light text-center my-4">
+      <thead>
+        <th>Index</th>
+        <th>Website Name</th>
+        <th>Visit</th>
+        <th>Delete</th>
+      </thead>
+      <tbody id="table_body"></tbody>
+    </table>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+  </body>
+</html>
